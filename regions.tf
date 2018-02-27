@@ -1,6 +1,8 @@
 variable "regions" {
   type = "map"
 
+  description = "Azure region mapping between short and standard format."
+
   default = {
     us-west          = "West US"
     us-west-2        = "West US 2"

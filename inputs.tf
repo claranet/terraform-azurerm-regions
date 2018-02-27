@@ -1,3 +1,4 @@
 variable "azurerm_region" {
-  type = "string"
+  type        = "string"
+  description = "Azure Region in short format"
 }
