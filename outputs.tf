@@ -1,4 +1,4 @@
 output "location" {
-  value       = "${data.template_file.region.rendered}"
+  value       = "${var.regions[var.azurerm_region]}"
   description = "Converted Azure region in standard format"
 }
