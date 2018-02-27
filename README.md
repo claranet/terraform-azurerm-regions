@@ -3,6 +3,7 @@
 This terraform module is designed to help in using the AzureRM terraform provider.
 
 It converts the Azure region given in short format (used by Claranet tfwrapper) to the Azure standard format.
+Please refer to the [regions.tf](regions.tf) file for available regions.
 
 ## Inputs
 
