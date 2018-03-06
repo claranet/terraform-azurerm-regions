@@ -9,7 +9,7 @@ Please refer to the [regions.tf](regions.tf) file for available regions.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
-| azurerm_region | Azure Region in short format | string | - | yes |
+| azure_region | Azure Region in short format | string | - | yes |
 | regions | Azure region mapping between short and standard format. | map | `<map>` | no |
 
 ## Outputs
