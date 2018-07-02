@@ -1,9 +1,7 @@
-variable "regions" {
-  type = "map"
-
+locals {
   description = "Azure region mapping between short and standard format."
 
-  default = {
+  regions = {
     us-west          = "West US"
     us-west-2        = "West US 2"
     us-west-central  = "West Central US"
@@ -20,14 +18,19 @@ variable "regions" {
     eu-west          = "West Europe"
     fr-central       = "France Central"
     fr-south         = "France South"
-    ger-neast        = "Germany Northeast"
+    ger-north-east   = "Germany Northeast"
     ger-central      = "Germany Central"
+    ger-west-central = "Germany West Central"
+    swz-north        = "Switzerland North"
+    swz-west         = "Switzerland West"
+    norw-east        = "Norway East"
+    norw-west        = "Norway West"
     saf-west         = "South Africa West"
     saf-north        = "South Africa North"
     ind-west         = "West India"
     ind-central      = "Central India"
     ind-south        = "South India"
-    asia-southeast   = "Southeast Asia"
+    asia-south-east  = "Southeast Asia"
     asia-east        = "East Asia"
     ch-north         = "China North"
     ch-east          = "China East"
@@ -38,6 +41,8 @@ variable "regions" {
     aus-central      = "Australia Central"
     aus-central-2    = "Australia Central 2"
     aus-east         = "Australia East"
-    aus-southeast    = "Australia Southeast"
+    aus-south-east   = "Australia Southeast"
+    uae-central      = "UAE Central"          # United Arab Emirates
+    uae-north        = "UAE North"            # United Arab Emirates
   }
 }
