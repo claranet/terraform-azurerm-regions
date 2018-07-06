@@ -1,4 +1,4 @@
 variable "azure_region" {
   type        = "string"
-  description = "Azure Region in short format"
+  description = "Azure Region in slug format"
 }

@@ -1,5 +1,5 @@
 locals {
-  description = "Azure region mapping between short and standard format."
+  description = "Azure region mapping between slug and standard format."
 
   regions = {
     us-west          = "West US"
@@ -44,5 +44,54 @@ locals {
     aus-south-east   = "Australia Southeast"
     uae-central      = "UAE Central"          # United Arab Emirates
     uae-north        = "UAE North"            # United Arab Emirates
+  }
+
+  short_names = {
+    "us-east"          = "ue"
+    "us-east-2"        = "ue2"
+    "us-central"       = "uc"
+    "us-north-central" = "unc"
+    "us-south-central" = "usc"
+    "us-west-central"  = "uwc"
+    "us-west"          = "uw"
+    "us-west-2"        = "uw2"
+    "can-east"         = "cae"
+    "can-central"      = "cac"
+    "bra-south"        = "brs"
+    "eu-north"         = "eun"
+    "eu-west"          = "euw"
+    "fr-central"       = "frc"
+    "fr-south"         = "frs"
+    "uk-west"          = "ukw"
+    "uk-south"         = "uks"
+    "ger-central"      = "gce"
+    "ger-north-east"   = "gne"
+    "ger-north"        = "gno"
+    "ger-west-central" = "gwc"
+    "swz-north"        = "swn"
+    "swz-west"         = "sww"
+    "norw-east"        = "noe"
+    "norw-west"        = "now"
+    "asia-south-east"  = "ase"
+    "asia-east"        = "ae"
+    "aus-east"         = "aue"
+    "aus-south"        = "ause"
+    "aus-central"      = "auc"
+    "aus-central-2"    = "auc2"
+    "cn-east"          = "cne"
+    "cn-north"         = "cnn"
+    "cn-east-2"        = "cne2"
+    "cn-north-2"       = "cnn2"
+    "ind-central"      = "inc"
+    "ind-west"         = "inw"
+    "ind-south"        = "ins"
+    "jap-east"         = "jpe"
+    "jap-west"         = "jpw"
+    "kor-central"      = "krc"
+    "kor-south"        = "krs"
+    "saf-west"         = "saw"
+    "saf-north"        = "san"
+    "uae-central"      = "uaec"
+    "uae-north"        = "uaen"
   }
 }
