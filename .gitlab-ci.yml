@@ -1,0 +1,22 @@
+image:
+  name: hashicorp/terraform:0.11.11
+
+stages:
+  - validate
+
+tffmt:
+  stage: validate
+  tags:
+    - default
+  script:
+    - terraform fmt -write=false -diff -check
+
+tfvalidate:
+  stage: validate
+  tags:
+    - default
+  script:
+    - mv main.tf.ci main.tf
+    - mv terraform.tfvars.ci terraform.tfvars
+    - terraform init
+    - terraform validate
