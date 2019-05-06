@@ -1,13 +1,19 @@
-# 1.0.1 (2019-01-14)
+# Unreleased
 
+Changed
+  * AZ-88: Normalize `location_short` variable
+
+# v1.0.1 - 2019-01-14
+
+Added
   * AZ-3: Continuous integration & migration on GitLab CI
 
-# 1.0.0 (2018-07-09)
+# v1.0.0 - 2018-07-09
 
-UPDATES:
-
+Changed
   * TER-295: Update Azure Regions and add short format.
 
-# 0.0.1 (2018-03-12)
+# v0.0.1 - 2018-03-12
 
+Added
   * First Release
