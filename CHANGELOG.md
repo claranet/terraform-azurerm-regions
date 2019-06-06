@@ -1,3 +1,8 @@
+# v2.0.0 - Unreleased
+
+Breaking
+  * AZ-94: Terraform 0.12.1 upgrade, HCL 2 upgrade. No longer compatible with Terraform < 0.12.
+
 # v1.1.0 - 2019-05-06
 
 Changed
