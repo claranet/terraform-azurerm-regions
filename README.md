@@ -9,6 +9,10 @@ Please refer to the [regions.tf](regions.tf) file for available regions.
 
 Complete regions mapping is also available here : [https://confluence.fr.clara.net/display/ACP/Azure+Naming+Convention](https://confluence.fr.clara.net/display/ACP/Azure+Naming+Convention)
 
+# Requirements
+* Azure provider >= 1.31
+* Terraform >=0.12
+
 ## Usage
 ```hcl
 module "azure-region" {
