@@ -6,8 +6,7 @@ It converts the Azure region given in slug format (used by Claranet tfwrapper) t
 and a short format used for resource naming.
 
 Please refer to the [regions.tf](regions.tf) file for available regions.
-
-Complete regions mapping is also available here: [https://confluence.fr.clara.net/display/ACP/Azure+Naming+Convention](https://confluence.fr.clara.net/display/ACP/Azure+Naming+Convention)
+Complete regions mapping is also available in [REGIONS.md](REGIONS.md) documentation.
 
 ## Requirements
 
