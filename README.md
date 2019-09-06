@@ -9,10 +9,10 @@ Please refer to the [regions.tf](regions.tf) file for available regions.
 
 Complete regions mapping is also available here: [https://confluence.fr.clara.net/display/ACP/Azure+Naming+Convention](https://confluence.fr.clara.net/display/ACP/Azure+Naming+Convention)
 
-# Requirements
+## Requirements
 
-* Terraform >=0.12
-* AzureRM Terraform provider >= 1.31
+* [Terraform](https://www.terraform.io/downloads.html) >= 0.12
+* [AzureRM Terraform provider](https://www.terraform.io/docs/providers/azurerm/) >= 1.31
 
 ## Usage
 ```hcl
