@@ -42,8 +42,8 @@ locals {
     aus-central-2    = "Australia Central 2"
     aus-east         = "Australia East"
     aus-south-east   = "Australia Southeast"
-    uae-central      = "UAE Central"          # United Arab Emirates
-    uae-north        = "UAE North"            # United Arab Emirates
+    uae-central      = "UAE Central" # United Arab Emirates
+    uae-north        = "UAE North"   # United Arab Emirates
   }
 
   short_names = {
@@ -95,3 +95,4 @@ locals {
     "uae-north"        = "uaen"
   }
 }
+

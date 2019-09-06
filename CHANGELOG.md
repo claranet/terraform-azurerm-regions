@@ -1,3 +1,8 @@
+# v2.0.0 - Unreleased
+
+Breaking
+  * AZ-94 Terraform 0.12 / HCL2 format
+
 # v1.1.0 - 2019-05-06
 
 Changed

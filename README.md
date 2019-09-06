@@ -7,7 +7,12 @@ and a short format used for resource naming.
 
 Please refer to the [regions.tf](regions.tf) file for available regions.
 
-Complete regions mapping is also available here : [https://confluence.fr.clara.net/display/ACP/Azure+Naming+Convention](https://confluence.fr.clara.net/display/ACP/Azure+Naming+Convention)
+Complete regions mapping is also available here: [https://confluence.fr.clara.net/display/ACP/Azure+Naming+Convention](https://confluence.fr.clara.net/display/ACP/Azure+Naming+Convention)
+
+## Requirements
+
+* [Terraform](https://www.terraform.io/downloads.html) >= 0.12
+* [AzureRM Terraform provider](https://www.terraform.io/docs/providers/azurerm/) >= 1.31
 
 ## Usage
 ```hcl
