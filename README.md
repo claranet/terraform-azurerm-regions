@@ -1,5 +1,5 @@
 # Azure regions module
-[![Changelog](https://img.shields.io/badge/changelog-release-green.svg)](CHANGELOG.md) [![Notice](https://img.shields.io/badge/notice-copyright-yellow.svg)](NOTICE) [![Apache V2 License](http://img.shields.io/badge/license-Apache%20V2-blue.svg)](LICENSE)
+[![Changelog](https://img.shields.io/badge/changelog-release-green.svg)](CHANGELOG.md) [![Notice](https://img.shields.io/badge/notice-copyright-yellow.svg)](NOTICE) [![Apache V2 License](https://img.shields.io/badge/license-Apache%20V2-orange.svg)](LICENSE) [![TF Registry](https://img.shields.io/badge/terraform-registry-blue.svg)](https://registry.terraform.io/modules/claranet/regions/azurerm/)
 
 This terraform module is designed to help in using the AzureRM terraform provider.
 
@@ -11,13 +11,21 @@ Complete regions mapping is also available in [REGIONS.md](REGIONS.md) documenta
 
 ## Requirements
 
-* [Terraform](https://www.terraform.io/downloads.html) >= 0.12
 * [AzureRM Terraform provider](https://www.terraform.io/docs/providers/azurerm/) >= 1.31
 
+## Terraform version compatibility
+
+| Module version | Terraform version |
+|----------------|-------------------|
+| >= 2.x.x       | 0.12.x            |
+| < 2.x.x        | 0.11.x            |
+
 ## Usage
+
 ```hcl
-module "azure-region" {
-  source = "git::ssh://git@git.fr.clara.net/claranet/cloudnative/projects/cloud/azure/terraform/modules/regions.git?ref=vX.X.X"
+module "az-region" {
+  source  = "claranet/regions/azurerm"
+  version = "x.x.x"
 
   azure_region = "eu-west"
 }
@@ -38,4 +46,4 @@ module "azure-region" {
 
 ## Related documentation
 
-Azure regions [https://azure.microsoft.com/en-us/global-infrastructure/regions/]
+Azure regions: [azure.microsoft.com/en-us/global-infrastructure/regions/](https://azure.microsoft.com/en-us/global-infrastructure/regions/)
