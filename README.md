@@ -35,7 +35,7 @@ module "azure-region" {
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:-----:|
+|------|-------------|------|---------|:--------:|
 | azure\_region | Azure Region in slug format | `string` | n/a | yes |
 
 ## Outputs
