@@ -1,3 +1,8 @@
+# v3.0.1/v4.0.0 - unreleased
+
+Changed
+  * AZ-273: Update README and CI, module compatible Terraform 0.13+ (now requires Terraform 0.12.26 minimum version)
+
 # v2.0.2/v3.0.0 - 2020-04-02
 
 Changed
