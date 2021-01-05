@@ -35,9 +35,9 @@ locals {
     ind-south        = "South India"
     asia-south-east  = "Southeast Asia"
     asia-east        = "East Asia"
-    ch-east          = "China East"
+    cn-east          = "China East"
     cn-east-2        = "China East 2"
-    ch-north         = "China North"
+    cn-north         = "China North"
     cn-north-2       = "China North 2"
     kor-central      = "Korea Central"
     kor-south        = "Korea South"
@@ -183,8 +183,8 @@ locals {
     "ger-north-east"   = "germanynortheast"   # "Germany Northeast"
     "ger-central"      = "germanycentral"     # "Germany Central"
 
-    "ch-north"   = "chinanorth"  # "China North"
-    "ch-east"    = "chinaeast"   # "China East"
+    "cn-north"   = "chinanorth"  # "China North"
+    "cn-east"    = "chinaeast"   # "China East"
     "cn-east-2"  = "chinaeast2"  # "China East 2"
     "cn-north-2" = "chinanorth2" # "China North 2"
   }

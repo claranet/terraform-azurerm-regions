@@ -113,7 +113,7 @@ uae-central      | uaecentral         | UAE Central
 bra-south-east   | brazilsoutheast    | Brazil Southeast
 ger-north-east   | germanynortheast   | Germany Northeast
 ger-central      | germanycentral     | Germany Central
-ch-north   | chinanorth  | China North
-ch-east    | chinaeast   | China East
+cn-north   | chinanorth  | China North
+cn-east    | chinaeast   | China East
 cn-east-2  | chinaeast2  | China East 2
 cn-north-2 | chinanorth2 | China North 2
