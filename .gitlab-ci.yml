@@ -13,4 +13,7 @@ include:
   - project: 'claranet/projects/cloud/azure/terraform/ci'
     ref: master
     file: '/module-tf_0.13-azurerm_2.x-validate.yml'
+  - project: 'claranet/projects/cloud/azure/terraform/ci'
+    ref: master
+    file: '/module-tf_0.14-azurerm_2.x-validate.yml'
 ...
