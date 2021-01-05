@@ -127,6 +127,8 @@ locals {
     "us"      = "us"     # United States
   }
 
+  # Thoses region CLI name where partially generated via
+  # `az account list-locations --output json | jq -r '.[] | "\"\" = \"" + .name + "\" # " + .displayName'`
   cli_names = {
     "us-east"          = "eastus"             # East US
     "us-east-2"        = "eastus2"            # East US 2
