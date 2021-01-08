@@ -44,6 +44,7 @@ module "azure-region" {
 | Name | Description |
 |------|-------------|
 | location | Converted Azure region in standard format |
+| location\_cli | Converted Azure region in Azure CLI name format |
 | location\_short | Converted Azure region in short format for resource naming purpose |
 
 ## Related documentation

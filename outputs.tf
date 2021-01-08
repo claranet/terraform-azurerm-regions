@@ -8,3 +8,7 @@ output "location_short" {
   description = "Converted Azure region in short format for resource naming purpose"
 }
 
+output "location_cli" {
+  value       = local.cli_names[var.azure_region]
+  description = "Converted Azure region in Azure CLI name format"
+}

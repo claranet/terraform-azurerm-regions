@@ -1,3 +1,8 @@
+# v3.1.0/v4.1.0 - unreleased
+
+Added:
+  * AZ-419: Add and output also the region in Azure CLI name format
+
 # v3.0.1/v4.0.0 - 2020-10-20
 
 Changed
