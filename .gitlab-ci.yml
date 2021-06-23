@@ -1,19 +1,11 @@
 ---
+variables:
+  TF_MIN_VERSION: "0.12"
+  AZURERM_PROVIDER_MIN_VERSION: "1.31"
+
 include:
   - template: 'Workflows/Branch-Pipelines.gitlab-ci.yml'
   - project: 'claranet/projects/cloud/azure/terraform/ci'
     ref: master
-    file: '/module-tf_0.12-azurerm_1.x-validate.yml'
-  - project: 'claranet/projects/cloud/azure/terraform/ci'
-    ref: master
-    file: '/module-tf_0.12-azurerm_2.x-validate.yml'
-  - project: 'claranet/projects/cloud/azure/terraform/ci'
-    ref: master
-    file: '/module-tf_0.13-azurerm_1.x-validate.yml'
-  - project: 'claranet/projects/cloud/azure/terraform/ci'
-    ref: master
-    file: '/module-tf_0.13-azurerm_2.x-validate.yml'
-  - project: 'claranet/projects/cloud/azure/terraform/ci'
-    ref: master
-    file: '/module-tf_0.14-azurerm_2.x-validate.yml'
+    file: '/pipeline.yml'
 ...
