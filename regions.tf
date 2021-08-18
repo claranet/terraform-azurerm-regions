@@ -1,5 +1,5 @@
 locals {
-  description = "Azure region mapping between slug and standard format."
+  # Azure region mapping between slug and standard format.
 
   regions = {
     us-west          = "West US"
