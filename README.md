@@ -12,7 +12,8 @@ Complete regions mapping is also available in [REGIONS.md](REGIONS.md) documenta
 ## Version compatibility
 
 | Module version | Terraform version | AzureRM version |
-|----------------|-------------------| --------------- |
+| -------------- | ----------------- | --------------- |
+| >= 5.x.x       | 0.15.x & 1.0.x    | >= 2.0          |
 | >= 4.x.x       | 0.13.x            | >= 2.0          |
 | >= 3.x.x       | 0.12.x            | >= 2.0          |
 | >= 2.x.x       | 0.12.x            | < 2.0           |
@@ -33,6 +34,19 @@ module "azure-region" {
 }
 ```
 
+<!-- BEGIN_TF_DOCS -->
+## Providers
+
+No providers.
+
+## Modules
+
+No modules.
+
+## Resources
+
+No resources.
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
@@ -46,7 +60,7 @@ module "azure-region" {
 | location | Converted Azure region in standard format |
 | location\_cli | Converted Azure region in Azure CLI name format |
 | location\_short | Converted Azure region in short format for resource naming purpose |
-
+<!-- END_TF_DOCS -->
 ## Related documentation
 
 Azure regions: [azure.microsoft.com/en-us/global-infrastructure/regions/](https://azure.microsoft.com/en-us/global-infrastructure/regions/)
