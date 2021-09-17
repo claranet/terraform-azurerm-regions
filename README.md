@@ -9,7 +9,8 @@ and a short format used for resource naming.
 Please refer to the [regions.tf](regions.tf) file for available regions.
 Complete regions mapping is also available in [REGIONS.md](REGIONS.md) documentation.
 
-## Version compatibility
+<!-- BEGIN_TF_DOCS -->
+## Global versionning rule for Claranet Azure modules
 
 | Module version | Terraform version | AzureRM version |
 | -------------- | ----------------- | --------------- |
@@ -26,15 +27,15 @@ which set some terraform variables in the environment needed by this module.
 More details about variables set by the `terraform-wrapper` available in the [documentation](https://github.com/claranet/terraform-wrapper#environment).
 
 ```hcl
-module "azure-region" {
+module "azure_region" {
   source  = "claranet/regions/azurerm"
   version = "x.x.x"
 
   azure_region = "eu-west"
 }
+
 ```
 
-<!-- BEGIN_TF_DOCS -->
 ## Providers
 
 No providers.
