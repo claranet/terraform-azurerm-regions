@@ -10,7 +10,7 @@ Please refer to the [regions.tf](regions.tf) file for available regions.
 Complete regions mapping is also available in [REGIONS.md](REGIONS.md) documentation.
 
 <!-- BEGIN_TF_DOCS -->
-## Global versionning rule for Claranet Azure modules
+## Global versioning rule for Claranet Azure modules
 
 | Module version | Terraform version | AzureRM version |
 | -------------- | ----------------- | --------------- |
