@@ -1,4 +1,4 @@
-# Unreleased
+# v3.2.0/v4.2.0 - 2021-10-13
 
 Changed:
   * AZ-583: Allow standard name, CLI name or slug format as input
