@@ -1,6 +1,7 @@
 # Unreleased
 
 Changed:
+  * AZ-583: Allow standard name, CLI name or slug format as input
   * AZ-572: Revamp examples and improve CI
 
 # v3.1.1/v4.1.1 - 2020-08-20
