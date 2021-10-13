@@ -1,4 +1,6 @@
 locals {
+  location_slug = lookup(zipmap(values(local.regions), keys(local.regions)), var.azure_region, lookup(zipmap(values(local.cli_names), keys(local.cli_names)), var.azure_region, var.azure_region))
+
   # Azure region mapping between slug and standard format.
 
   regions = {

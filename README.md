@@ -1,10 +1,10 @@
 # Azure regions module
 [![Changelog](https://img.shields.io/badge/changelog-release-green.svg)](CHANGELOG.md) [![Notice](https://img.shields.io/badge/notice-copyright-yellow.svg)](NOTICE) [![Apache V2 License](https://img.shields.io/badge/license-Apache%20V2-orange.svg)](LICENSE) [![TF Registry](https://img.shields.io/badge/terraform-registry-blue.svg)](https://registry.terraform.io/modules/claranet/regions/azurerm/)
 
-This terraform module is designed to help in using the AzureRM terraform provider.
+This Terraform module is designed to help in using the AzureRM terraform provider.
 
-It converts the Azure region given in slug format (used by Claranet tfwrapper) to the Azure standard format
-and a short format used for resource naming.
+It provides for an Azure region given in standard format, CLI format or slug format (used by Claranet tfwrapper) the 
+Azure standard format, a short format used for resource naming, the CLI format and a slug format.
 
 Please refer to the [regions.tf](regions.tf) file for available regions.
 Complete regions mapping is also available in [REGIONS.md](REGIONS.md) documentation.
@@ -52,16 +52,18 @@ No resources.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| azure\_region | Azure Region in slug format | `string` | n/a | yes |
+| azure\_region | Azure Region standard name, CLI name or slug format | `string` | n/a | yes |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| location | Converted Azure region in standard format |
-| location\_cli | Converted Azure region in Azure CLI name format |
-| location\_short | Converted Azure region in short format for resource naming purpose |
+| location | Azure region in standard format |
+| location\_cli | Azure region in Azure CLI name format |
+| location\_short | Azure region in short format for resource naming purpose |
+| location\_slug | Azure region in slug format |
 <!-- END_TF_DOCS -->
+
 ## Related documentation
 
 Azure regions: [azure.microsoft.com/en-us/global-infrastructure/regions/](https://azure.microsoft.com/en-us/global-infrastructure/regions/)
