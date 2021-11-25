@@ -1,3 +1,8 @@
+# v3.2.1/v4.2.1 - 2021-11-25
+
+Fixed:
+  * [GITHUB-1](https://github.com/claranet/terraform-azurerm-regions/pull/1): Fix region Brazil typo (#1)
+
 # v3.2.0/v4.2.0 - 2021-10-13
 
 Changed:
