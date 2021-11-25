@@ -14,7 +14,7 @@ locals {
     us-east-2        = "East US 2"
     can-central      = "Canada Central"
     can-east         = "Canada East"
-    bra-south        = "Brasil South"
+    bra-south        = "Brazil South"
     bra-south-east   = "Brazil Southeast"
     uk-south         = "UK South"
     uk-west          = "UK West"
