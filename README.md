@@ -5,6 +5,7 @@ This Terraform module is designed to help in using the AzureRM terraform provide
 
 It provides for an Azure region given in standard format, CLI format or slug format (used by Claranet tfwrapper) the 
 Azure standard format, a short format used for resource naming, the CLI format and a slug format.
+
 It also provides the [paired region](https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure) associated to the current one.
 
 Please refer to the [regions.tf](regions.tf) file for available regions.
