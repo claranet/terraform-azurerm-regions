@@ -1,3 +1,8 @@
+# Unreleased
+
+Added:
+  * AZ-720/[GITHUB-2](https://github.com/claranet/terraform-azurerm-regions/issues/2): Add paired region in outputs
+
 # v3.2.1/v4.2.1 - 2021-11-25
 
 Fixed:
