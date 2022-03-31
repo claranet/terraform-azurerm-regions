@@ -20,5 +20,5 @@ output "location_slug" {
 
 output "location_paired" {
   description = "Azure paired region with the current one (in slug format)"
-  value       = local.paired[local.location_slug]
+  value       = try(local.paired[local.location_slug], null)
 }

@@ -220,8 +220,6 @@ locals {
     fr-central       = "fr-south"
     fr-south         = "fr-central"
     ger-north        = "ger-west-central"
-    # ger-north-east   = "Germany Northeast"
-    # ger-central      = "Germany Central"
     ger-west-central = "ger-north"
     swz-north        = "swz-west"
     swz-west         = "swz-north"
