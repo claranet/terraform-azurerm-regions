@@ -200,6 +200,8 @@ locals {
   }
 
   # Based on https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure
+  # Can be retrieved by cli too:
+  # `az account list-locations -o table --query '[].[displayName, name, metadata.pairedRegion[0].name]'`
   paired = {
     us-west          = "us-east"
     us-west-2        = "us-west-central"
