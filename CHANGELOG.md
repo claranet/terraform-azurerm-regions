@@ -11,6 +11,9 @@ Fixed:
 
 # v5.0.0 - 2022-04-05
 
+Changed:
+  * AZ-717: Update README and improve CI for Terraform `v1.1` and latest major module version
+
 Added:
   * AZ-720/[GITHUB-2](https://github.com/claranet/terraform-azurerm-regions/issues/2): Add paired region in outputs
 
