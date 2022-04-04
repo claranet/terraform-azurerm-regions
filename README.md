@@ -64,7 +64,7 @@ No resources.
 | location\_cli | Azure region in Azure CLI name format |
 | location\_short | Azure region in short format for resource naming purpose |
 | location\_slug | Azure region in slug format |
-| paired\_location | Azure paired region with the current one. All formats available as attributes. |
+| paired\_location | Azure paired region with the current one. All formats available as attributes.<pre>object({<br>  location (string): Azure paired region in standard format<br>  location_short (string): Azure paired region in short format for resource naming purpose<br>  location_cli (string): Azure paired region in CLI name format<br>  location_slug (string): Azure paired region in slug format<br>})</pre> |
 <!-- END_TF_DOCS -->
 
 ## Related documentation
