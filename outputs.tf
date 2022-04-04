@@ -18,7 +18,7 @@ output "location_slug" {
   description = "Azure region in slug format"
 }
 
-output "location_paired" {
+output "paired_location" {
   description = "Azure paired region with the current one. All formats available as attributes."
   value = local.paired_region == null ? null : {
     location       = local.regions[local.paired_region]

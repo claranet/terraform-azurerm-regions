@@ -62,9 +62,9 @@ No resources.
 |------|-------------|
 | location | Azure region in standard format |
 | location\_cli | Azure region in Azure CLI name format |
-| location\_paired | Azure paired region with the current one. All formats available as attributes. |
 | location\_short | Azure region in short format for resource naming purpose |
 | location\_slug | Azure region in slug format |
+| paired\_location | Azure paired region with the current one. All formats available as attributes. |
 <!-- END_TF_DOCS -->
 
 ## Related documentation
