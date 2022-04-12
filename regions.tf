@@ -99,6 +99,7 @@ locals {
     "asia-east"        = "ae"
     "aus-east"         = "aue"
     "aus-south"        = "aus"
+    "aus-south-east"   = "ause"
     "aus-central"      = "auc"
     "aus-central-2"    = "auc2"
     "cn-east"          = "cne"
