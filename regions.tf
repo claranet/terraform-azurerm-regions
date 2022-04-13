@@ -98,7 +98,6 @@ locals {
     "asia-south-east"  = "ase"
     "asia-east"        = "ae"
     "aus-east"         = "aue"
-    "aus-south"        = "aus"
     "aus-south-east"   = "ause"
     "aus-central"      = "auc"
     "aus-central-2"    = "auc2"
@@ -141,7 +140,6 @@ locals {
     "us-east-2"        = "eastus2"            # East US 2
     "us-south-central" = "southcentralus"     # South Central US
     "us-west-2"        = "westus2"            # West US 2
-    "aus-east"         = "australiaeast"      # Australia East
     "asia-south-east"  = "southeastasia"      # Southeast Asia
     "eu-north"         = "northeurope"        # North Europe
     "uk-south"         = "uksouth"            # UK South
@@ -176,6 +174,7 @@ locals {
     "saf-west"         = "southafricawest"    # South Africa West
     "aus-central"      = "australiacentral"   # Australia Central
     "aus-central-2"    = "australiacentral2"  # Australia Central 2
+    "aus-east"         = "australiaeast"      # Australia East
     "aus-south-east"   = "australiasoutheast" # Australia Southeast
     "jap-west"         = "japanwest"          # Japan West
     "kor-south"        = "koreasouth"         # Korea South

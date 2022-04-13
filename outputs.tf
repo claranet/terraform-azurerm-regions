@@ -31,9 +31,9 @@ object({
 ```
 EOD
   value = local.paired_region == null ? null : {
-    location       = local.regions[local.paired_region]
-    location_short = local.short_names[local.paired_region]
-    location_cli   = local.cli_names[local.paired_region]
+    location       = try(local.regions[local.paired_region], null)
+    location_short = try(local.short_names[local.paired_region], null)
+    location_cli   = try(local.cli_names[local.paired_region], null)
     location_slug  = local.paired_region
   }
 }
