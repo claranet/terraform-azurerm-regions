@@ -1,3 +1,8 @@
+# Unreleased
+
+Fixed:
+  * [GITHUB-3](https://github.com/claranet/terraform-azurerm-regions/issues/3): Fix region Australia Southeast short name, cleanup Australia South
+
 # v5.0.0 - 2022-04-05
 
 Added:
