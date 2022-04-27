@@ -1,3 +1,8 @@
+# Unreleased
+
+Changed:
+  * AZ-728: Remove unnecessary `required_providers` block
+
 # v5.0.1 - 2022-04-13
 
 Fixed:
