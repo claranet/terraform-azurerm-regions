@@ -1,3 +1,8 @@
+# Unreleased
+
+Changed:
+  * AZ-717: Update README and improve CI for Terraform `v1.1` and latest major module version
+
 # v5.1.0 - 2022-04-27
 
 Changed:
