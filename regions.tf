@@ -6,6 +6,7 @@ locals {
   regions = {
     us-west          = "West US"
     us-west-2        = "West US 2"
+    us-west-3        = "West US 3"
     us-central       = "Central US"
     us-west-central  = "West Central US"
     us-south-central = "South Central US"
@@ -77,6 +78,7 @@ locals {
     "us-west-central"  = "uwc"
     "us-west"          = "uw"
     "us-west-2"        = "uw2"
+    "us-west-3"        = "uw3"
     "can-east"         = "cae"
     "can-central"      = "cac"
     "bra-south"        = "brs"
@@ -140,6 +142,7 @@ locals {
     "us-east-2"        = "eastus2"            # East US 2
     "us-south-central" = "southcentralus"     # South Central US
     "us-west-2"        = "westus2"            # West US 2
+    "us-west-3"        = "westus3"            # West US 3
     "asia-south-east"  = "southeastasia"      # Southeast Asia
     "eu-north"         = "northeurope"        # North Europe
     "uk-south"         = "uksouth"            # UK South
@@ -205,6 +208,7 @@ locals {
   paired = {
     us-west          = "us-east"
     us-west-2        = "us-west-central"
+    us-west-3        = "us-east"
     us-central       = "us-east-2"
     us-west-central  = "us-west-2"
     us-south-central = "us-north-central"
