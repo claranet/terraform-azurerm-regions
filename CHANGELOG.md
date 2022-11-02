@@ -1,4 +1,4 @@
-# Unreleased
+# v6.1.0 - 2022-11-02
 
 Added
   * [GITHUB-6](https://github.com/claranet/terraform-azurerm-regions/pull/6): Add West US 3 region
