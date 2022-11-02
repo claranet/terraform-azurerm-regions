@@ -10,6 +10,7 @@
 | West Central US      | uwc            | us-west-central             |
 | West US              | uw             | us-west                     |
 | West US 2            | uw2            | us-west-2                   |
+| West US 3            | uw3            | us-west-3                   |
 | Canada East          | cae            | can-east                    |
 | Canada Central       | cac            | can-central                 |
 | Brazil South         | brs            | bra-south                   |
@@ -63,6 +64,7 @@
 | us-east-2                   | eastus2            | East US 2            |
 | us-south-central            | southcentralus     | South Central US     |
 | us-west-2                   | westus2            | West US 2            |
+| us-west-3                   | westus3            | West US 3            |
 | asia-south-east             | southeastasia      | Southeast Asia       |
 | eu-north                    | northeurope        | North Europe         |
 | uk-south                    | uksouth            | UK South             |
