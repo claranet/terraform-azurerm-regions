@@ -1,20 +1,50 @@
 # Contributing
 
-When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change. 
+When contributing to this repository, please first discuss the change you wish to make via an issue,
+an email, or any other method with the owners of this repository before making a change.
 
 Please note we have a code of conduct, please follow it in all your interactions with the project.
 
 ## Pull Request Process
 
-1. Ensure any install or build dependencies are removed before the end of the layer when doing a 
-   build.
-2. Update the README.md with details of changes to the interface, this includes new environment 
-   variables, exposed ports, useful file locations and container parameters.
-3. Increase the version numbers in any examples files and the README.md to the new version that this
-   Pull Request would represent. The versioning scheme we use is [SemVer](http://semver.org/).
-4. You may merge the Pull Request in once you have the sign-off of two other developers, or if you 
-   do not have permission to do that, you may request the second reviewer to merge it for you.
+1. Ensure any installed or built dependencies are removed before the end of the layer when doing a
+   Pull Request. Ensure also that your code is clean and production ready.
+2. Update the [README.md](./README.md) with details of changes to the module, including variables, outputs
+   or changes to [examples](./examples).
+3. Update the [CHANGELOG.md](./CHANGELOG.md) with a new entry block starting with `# Unreleased`
+   followed by a description of your new feature, bug fix or change.
+4. The Github Actions CI must pass. It ensures that our Terraform module codestyle rules are followed.
+5. Please wait for maintainers to review your code, they will merge and release your changes once every
+   discussions or implementation details are satisfied.
+
+### Pre-commit usage
+
+We recommend using `pre-commit` ([the famous python git hooks tool](https://pre-commit.com/#intro))
+when you start a contribution. It will automatically trigger hooks which ensure our codestyle rules are followed,
+files are formatted and linted, and that your README.md file is proprerly generated and updated.
+
+Installation on your local system:
+```bash
+$ pipx install pre-commit
+```
+or
+```bash
+$ pip3 install pre-commit --user
+```
+
+and then, configure and enable our hooks:
+```bash
+$ cd path_to_the_git_cloned_module/
+$ pre-commit install
+```
+
+Do your changes as usual, hooks will be triggered by `pre-commit` every time you use the `git commit` command.
+
+To have all `pre-commit` hooks working you will have to setup thoses dependencies locally:
+- latest version of [terraform](https://releases.hashicorp.com/terraform/)
+- [tfdocs](https://github.com/terraform-docs/terraform-docs)
+- [tflint](https://github.com/terraform-linters/tflint)
+- [tfsec](https://github.com/aquasecurity/tfsec)
 
 ## Code of Conduct
 
@@ -29,10 +59,10 @@ orientation.
 
 ### Our Standards
 
-Examples of behavior that contributes to creating a positive environment
+Examples of behavior that contribute to creating a positive environment
 include:
 
-* Using welcoming and inclusive language
+* Using a welcoming and inclusive language
 * Being respectful of differing viewpoints and experiences
 * Gracefully accepting constructive criticism
 * Focusing on what is best for the community
@@ -40,7 +70,7 @@ include:
 
 Examples of unacceptable behavior by participants include:
 
-* The use of sexualized language or imagery and unwelcome sexual attention or
+* The use of sexualized language or imagery and unwelcome sexual attentions or
 advances
 * Trolling, insulting/derogatory comments, and personal or political attacks
 * Public or private harassment
@@ -52,13 +82,13 @@ advances
 ### Our Responsibilities
 
 Project maintainers are responsible for clarifying the standards of acceptable
-behavior and are expected to take appropriate and fair corrective action in
-response to any instances of unacceptable behavior.
+behavior and are expected to take appropriate and fair corrective actions in
+response to any instance of unacceptable behavior.
 
 Project maintainers have the right and responsibility to remove, edit, or
 reject comments, commits, code, wiki edits, issues, and other contributions
-that are not aligned to this Code of Conduct, or to ban temporarily or
-permanently any contributor for other behaviors that they deem inappropriate,
+that are not aligned to this Code of Conduct, to temporarily or permanently
+ban any contributor for other behaviors that they deem inappropriate,
 threatening, offensive, or harmful.
 
 ### Scope
