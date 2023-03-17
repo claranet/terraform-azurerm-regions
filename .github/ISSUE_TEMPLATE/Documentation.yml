@@ -1,0 +1,16 @@
+name: Documentation
+description: Additions, improvement or patch about documentation
+title: "[DOC] ..."
+labels: [documentation, enhancement]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Please leave a helpful description.
+      value: |
+        **Explain what part of documentation is missing or not enough**
+        Like I don't understand how to do this, or it miss context for that..
+
+        **Give us some suggestions**
+        Here are some suggestions or, even better, here is a pull request.
