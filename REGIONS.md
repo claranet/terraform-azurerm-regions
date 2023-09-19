@@ -2,42 +2,45 @@
 
 | Region name          | Short notation | Internal terraform notation |
 | -------------------- | -------------- | --------------------------- |
-| East US              | ue             | us-east                     |
-| East US 2            | ue2            | us-east-2                   |
-| Central US           | uc             | us-central                  |
-| North Central US     | unc            | us-north-central            |
-| South Central US     | usc            | us-south-central            |
-| West Central US      | uwc            | us-west-central             |
-| West US              | uw             | us-west                     |
-| West US 2            | uw2            | us-west-2                   |
-| West US 3            | uw3            | us-west-3                   |
-| Canada East          | cae            | can-east                    |
-| Canada Central       | cac            | can-central                 |
+| East US              | eus            | us-east                     |
+| East US 2            | eus2           | us-east-2                   |
+| Central US           | cus            | us-central                  |
+| North Central US     | ncus           | us-north-central            |
+| South Central US     | scus           | us-south-central            |
+| West Central US      | wcus           | us-west-central             |
+| West US              | wus            | us-west                     |
+| West US 2            | wus2           | us-west-2                   |
+| West US 3            | wus3           | us-west-3                   |
+| Canada East          | cne            | can-east                    |
+| Canada Central       | cnc            | can-central                 |
 | Brazil South         | brs            | bra-south                   |
-| North Europe         | eun            | eu-north                    |
-| West Europe          | euw            | eu-west                     |
+| Brazil South East    | bre            | bra-south-east              |
+| North Europe         | ne             | eu-north                    |
+| West Europe          | we             | eu-west                     |
 | France Central       | frc            | fr-central                  |
 | France South         | frs            | fr-south                    |
 | UK West              | ukw            | uk-west                     |
 | UK South             | uks            | uk-south                    |
-| Germany Central      | gce            | ger-central                 |
+| Germany Central      | gec            | ger-central                 |
 | Germany Northeast    | gne            | ger-north-east              |
-| Germany North        | gno            | ger-north                   |
+| Germany North        | gn             | ger-north                   |
 | Germany West Central | gwc            | ger-west-central            |
-| Switzerland North    | swn            | swz-north                   |
-| Switzerland West     | sww            | swz-west                    |
-| Norway East          | noe            | norw-east                   |
-| Norway West          | now            | norw-west                   |
-| Southeast Asia       | ase            | asia-south-east             |
-| East Asia            | ae             | asia-east                   |
-| Australia East       | aue            | aus-east                    |
-| Australia Southeast  | ause           | aus-south                   |
-| Australia Central    | auc            | aus-central                 |
-| Australia Central 2  | auc2           | aus-central-2               |
-| China East           | cne            | cn-east                     |
-| China North          | cnn            | cn-north                    |
-| China East 2         | cne2           | cn-east-2                   |
-| China North 2        | cnn2           | cn-north-2                  |
+| Switzerland North    | szn            | swz-north                   |
+| Switzerland West     | szw            | swz-west                    |
+| Norway East          | nwe            | norw-east                   |
+| Norway West          | nww            | norw-west                   |
+| Southeast Asia       | sea            | asia-south-east             |
+| East Asia            | ea             | asia-east                   |
+| Australia East       | ae             | aus-east                    |
+| Australia Southeast  | ase            | aus-south                   |
+| Australia Central    | acl            | aus-central                 |
+| Australia Central 2  | acl2           | aus-central-2               |
+| China East           | sha            | cn-east                     |
+| China North          | bjb            | cn-north                    |
+| China East 2         | sha2           | cn-east-2                   |
+| China North 2        | bjb2           | cn-north-2                  |
+| China East 3         | sha3           | cn-east-3                   |
+| China North 3        | bjb3           | cn-north-3                  |
 | Central India        | inc            | ind-central                 |
 | West India           | inw            | ind-west                    |
 | South India          | ins            | ind-south                   |
@@ -47,8 +50,8 @@
 | Korea South          | krs            | kor-south                   |
 | South Africa West    | saw            | saf-west                    |
 | South Africa North   | san            | saf-north                   |
-| UAE Central          | uaec           | uae-central                 |
-| UAE North            | uaen           | uae-north                   |
+| UAE Central          | uac            | uae-central                 |
+| UAE North            | uan            | uae-north                   |
 | US Gov Virginia      | govv           | -                           |
 | US Gov Iowa          | govi           | -                           |
 | US Gov Arizona       | gova           | -                           |
