@@ -69,16 +69,20 @@ locals {
     "us"      = "United States"
   }
 
+  /* Short names based on the following rules (where possible) to have better clarity:
+    - contains at least 3 chars, where 2 chars represents global part (continent)
+    - use ISO 3166 code of country concatenation
+  */
   short_names = {
-    "us-east"          = "ue"
-    "us-east-2"        = "ue2"
-    "us-central"       = "uc"
-    "us-north-central" = "unc"
-    "us-south-central" = "usc"
-    "us-west-central"  = "uwc"
-    "us-west"          = "uw"
-    "us-west-2"        = "uw2"
-    "us-west-3"        = "uw3"
+    "us-east"          = "use"
+    "us-east-2"        = "use2"
+    "us-central"       = "usc"
+    "us-north-central" = "usnc"
+    "us-south-central" = "ussc"
+    "us-west-central"  = "uswc"
+    "us-west"          = "usw"
+    "us-west-2"        = "usw2"
+    "us-west-3"        = "usw3"
     "can-east"         = "cae"
     "can-central"      = "cac"
     "bra-south"        = "brs"
@@ -97,8 +101,8 @@ locals {
     "swz-west"         = "sww"
     "norw-east"        = "noe"
     "norw-west"        = "now"
-    "asia-south-east"  = "ase"
-    "asia-east"        = "ae"
+    "asia-south-east"  = "asse"
+    "asia-east"        = "asea"
     "aus-east"         = "aue"
     "aus-south-east"   = "ause"
     "aus-central"      = "auc"
@@ -122,17 +126,17 @@ locals {
     "uae-north"        = "uaen"
 
     # Global/continental zones
-    "asia"    = "asia"   # Asia
-    "asia-pa" = "asiapa" # Asia Pacific
-    "aus"     = "aus"    # Australia
-    "bra"     = "bra"    # Brazil
-    "can"     = "can"    # Canada
-    "eu"      = "eu"     # Europe
-    "global"  = "glob"   # Global
-    "ind"     = "ind"    # India
-    "jap"     = "jap"    # Japan
-    "uk"      = "uk"     # United Kingdom
-    "us"      = "us"     # United States
+    "asia"    = "asia" # Asia
+    "asia-pa" = "apac" # Asia Pacific
+    "aus"     = "aus"  # Australia
+    "bra"     = "bra"  # Brazil
+    "can"     = "can"  # Canada
+    "eu"      = "eu"   # Europe
+    "global"  = "glob" # Global
+    "ind"     = "ind"  # India
+    "jap"     = "jap"  # Japan
+    "uk"      = "uk"   # United Kingdom
+    "us"      = "us"   # United States
   }
 
   # Thoses region CLI name where partially generated via
