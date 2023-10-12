@@ -70,7 +70,7 @@ locals {
   }
 
   /* Short names based on the following rules (where possible) to have better clarity:
-    - contains at least 3 chars, where 2 chars represents global part (continent)
+    - contains at least 3 chars, where 2 chars represent global part (continent)
     - use ISO 3166 code of country concatenation
   */
   short_names = {
