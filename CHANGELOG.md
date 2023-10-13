@@ -1,3 +1,8 @@
+# Unreleased
+
+Fixed
+  * [GITHUB-7](https://github.com/claranet/terraform-azurerm-regions/issues/7): Fix US and Asia regions short names
+
 # v6.1.0 - 2022-11-02
 
 Added
