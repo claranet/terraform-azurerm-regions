@@ -1,4 +1,4 @@
-# Unreleased
+# v7.0.0 - 2023-10-13
 
 Breaking
   * [GITHUB-7](https://github.com/claranet/terraform-azurerm-regions/issues/7): Fix US and Asia regions short names using ISO 3166 country code
