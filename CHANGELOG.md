@@ -1,3 +1,8 @@
+# Unreleased
+
+Breaking
+  * [GITHUB-7](https://github.com/claranet/terraform-azurerm-regions/issues/7): Fix US and Asia regions short names using ISO 3166 country code
+
 # v6.1.0 - 2022-11-02
 
 Added
@@ -5,44 +10,44 @@ Added
 
 # v6.0.0 - 2022-07-08
 
-Changed:
+Changed
   * AZ-717: Update README and improve CI for Terraform `v1.1` and latest major module version
 
 # v5.1.0 - 2022-04-27
 
-Changed:
+Changed
   * AZ-728: Remove unnecessary `required_providers` block
 
 # v5.0.1 - 2022-04-13
 
-Fixed:
+Fixed
   * [GITHUB-3](https://github.com/claranet/terraform-azurerm-regions/issues/3): Fix region Australia Southeast short name, cleanup Australia South
   * AZ-720: Add `try()` on outputs
 
 # v5.0.0 - 2022-04-05
 
-Added:
+Added
   * AZ-720/[GITHUB-2](https://github.com/claranet/terraform-azurerm-regions/issues/2): Add paired region in outputs
 
 # v3.2.1/v4.2.1 - 2021-11-25
 
-Fixed:
+Fixed
   * [GITHUB-1](https://github.com/claranet/terraform-azurerm-regions/pull/1): Fix region Brazil typo (#1)
 
 # v3.2.0/v4.2.0 - 2021-10-13
 
-Changed:
+Changed
   * AZ-583: Allow standard name, CLI name or slug format as input
   * AZ-572: Revamp examples and improve CI
 
 # v3.1.1/v4.1.1 - 2020-08-20
 
-Updated:
+Updated
   * AZ-532: Revamp README with latest `terraform-docs` tool
 
 # v3.1.0/v4.1.0 - 2021-01-08
 
-Added:
+Added
   * AZ-419: Add and output also the region in Azure CLI name format
 
 # v3.0.1/v4.0.0 - 2020-10-20

@@ -2,15 +2,15 @@
 
 | Region name          | Short notation | Internal terraform notation |
 | -------------------- | -------------- | --------------------------- |
-| East US              | ue             | us-east                     |
-| East US 2            | ue2            | us-east-2                   |
-| Central US           | uc             | us-central                  |
-| North Central US     | unc            | us-north-central            |
-| South Central US     | usc            | us-south-central            |
-| West Central US      | uwc            | us-west-central             |
-| West US              | uw             | us-west                     |
-| West US 2            | uw2            | us-west-2                   |
-| West US 3            | uw3            | us-west-3                   |
+| East US              | use            | us-east                     |
+| East US 2            | use2           | us-east-2                   |
+| Central US           | usc            | us-central                  |
+| North Central US     | usnc           | us-north-central            |
+| South Central US     | ussc           | us-south-central            |
+| West Central US      | uswc           | us-west-central             |
+| West US              | usw            | us-west                     |
+| West US 3            | usw3           | us-west-3                   |
+| West US 2            | usw2           | us-west-2                   |
 | Canada East          | cae            | can-east                    |
 | Canada Central       | cac            | can-central                 |
 | Brazil South         | brs            | bra-south                   |
@@ -28,8 +28,9 @@
 | Switzerland West     | sww            | swz-west                    |
 | Norway East          | noe            | norw-east                   |
 | Norway West          | now            | norw-west                   |
-| Southeast Asia       | ase            | asia-south-east             |
-| East Asia            | ae             | asia-east                   |
+| Southeast Asia       | asse           | asia-south-east             |
+| East Asia            | asea           | asia-east                   |
+| Asia Pacific         | apac           | asia-pa                     |
 | Australia East       | aue            | aus-east                    |
 | Australia Southeast  | ause           | aus-south                   |
 | Australia Central    | auc            | aus-central                 |
