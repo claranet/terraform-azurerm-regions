@@ -54,6 +54,7 @@ locals {
     aus-south-east   = "Australia Southeast"
     uae-central      = "UAE Central" # United Arab Emirates
     uae-north        = "UAE North"   # United Arab Emirates
+    qat-central      = "Qatar Central"
 
     # Global/continental zones
     "asia"    = "Asia"
@@ -124,6 +125,7 @@ locals {
     "saf-north"        = "san"
     "uae-central"      = "uaec"
     "uae-north"        = "uaen"
+    "qat-central"      = "qatc"
 
     # Global/continental zones
     "asia"    = "asia" # Asia
@@ -197,6 +199,7 @@ locals {
     "bra-south-east"   = "brazilsoutheast"    # Brazil Southeast
     "ger-north-east"   = "germanynortheast"   # "Germany Northeast"
     "ger-central"      = "germanycentral"     # "Germany Central"
+    "qat-central"      = "qatarcentral"       # Qatar Central
 
     "cn-north"   = "chinanorth"  # "China North"
     "cn-east"    = "chinaeast"   # "China East"
