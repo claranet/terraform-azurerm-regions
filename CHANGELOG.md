@@ -1,4 +1,4 @@
-# Unreleased
+# v7.1.0 - 2023-11-17
 
 Added
   * [GITHUB-9](https://github.com/claranet/terraform-azurerm-regions/issues/9): Support of qatarcentral region on Azure
