@@ -50,6 +50,7 @@
 | South Africa North   | san            | saf-north                   |
 | UAE Central          | uaec           | uae-central                 |
 | UAE North            | uaen           | uae-north                   |
+| Qatar Central        | qatc           | qat-central                 |
 | US Gov Virginia      | govv           | -                           |
 | US Gov Iowa          | govi           | -                           |
 | US Gov Arizona       | gova           | -                           |
@@ -116,6 +117,7 @@
 | bra-south-east              | brazilsoutheast    | Brazil Southeast     |
 | ger-north-east              | germanynortheast   | Germany Northeast    |
 | ger-central                 | germanycentral     | Germany Central      |
+| qat-central                 | qatarcentral       | Qatar Central        |
 | cn-north                    | chinanorth         | China North          |
 | cn-east                     | chinaeast          | China East           |
 | cn-east-2                   | chinaeast2         | China East 2         |
