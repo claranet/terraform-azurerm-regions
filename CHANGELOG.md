@@ -2,6 +2,7 @@
 
 Added
   * [GITHUB-9](https://github.com/claranet/terraform-azurerm-regions/issues/9): Support of qatarcentral region on Azure
+  * AZ-1248: Update regions
 
 # v7.0.0 - 2023-10-13
 
