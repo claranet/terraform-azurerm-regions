@@ -1,3 +1,8 @@
+# Unreleased
+
+Fixed
+  * [GITHUB-11](https://github.com/claranet/terraform-azurerm-regions/issues/11): Fix Japan incorrect paired regions
+
 # v7.1.0 - 2023-11-17
 
 Added
