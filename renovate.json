@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "local>claranet/guildes/pipeline/renovatebot/renovate-config"
+    "local>claranet/projects/cloud/azure/renovatebot-config"
   ]
 }
