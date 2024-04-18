@@ -4,7 +4,6 @@ variables:
   AZURERM_PROVIDER_MIN_VERSION: "1.0"
 
 include:
-  - template: 'Workflows/Branch-Pipelines.gitlab-ci.yml'
   - project: 'claranet/projects/cloud/azure/terraform/ci'
     ref: master
     file: '/pipeline.yml'

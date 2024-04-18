@@ -1,30 +1,52 @@
+default_install_hook_types: [commit-msg, pre-commit]
 repos:
--   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
     hooks:
       - id: trailing-whitespace
+        stages: [pre-commit]
       - id: end-of-file-fixer
+        stages: [pre-commit]
       - id: check-json
+        stages: [pre-commit]
       - id: check-yaml
+        stages: [pre-commit]
         args:
           - --unsafe
       - id: check-symlinks
+        stages: [pre-commit]
       - id: check-added-large-files
+        stages: [pre-commit]
+        args:
+          - --maxkb=15000
       - id: detect-private-key
+        stages: [pre-commit]
 
-- repo: https://github.com/antonbabenko/pre-commit-terraform.git
-  rev: v1.77.1
-  hooks:
-    - id: terraform_fmt
-    - id: terraform_docs
-      args:
-        - --args=--config=.config/terraform-docs.yml
-      exclude: '^modules|^example|^tools'
-    - id: terraform_validate
-      exclude: ^examples
-    - id: terraform_tflint
-      exclude: ^examples
-      args:
-        - --args=--config=__GIT_WORKING_DIR__/.config/tflint.hcl
-        - --env-vars=TFLINT_LOG="info"
-    - id: terraform_tfsec
+  - repo: https://github.com/antonbabenko/pre-commit-terraform.git
+    rev: v1.88.4
+    hooks:
+      - id: terraform_fmt
+        stages: [pre-commit]
+      - id: terraform_docs
+        stages: [pre-commit]
+        args:
+          - --args=--config=.config/terraform-docs.yml
+        exclude: "^modules|^example|^tools"
+      - id: terraform_validate
+        stages: [pre-commit]
+        exclude: ^examples
+      - id: terraform_tflint
+        stages: [pre-commit]
+        exclude: ^examples
+        args:
+          - --args=--config=__GIT_WORKING_DIR__/.config/tflint.hcl
+          - --env-vars=TFLINT_LOG="info"
+      - id: terraform_tfsec
+        stages: [pre-commit]
+
+  - repo: https://github.com/compilerla/conventional-pre-commit
+    rev: v3.2.0
+    hooks:
+      - id: conventional-pre-commit
+        stages: [commit-msg]
+        args: [] # optional: list of Conventional Commits types to allow e.g. [feat, fix, ci, chore, test]
