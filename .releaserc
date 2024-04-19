@@ -135,7 +135,6 @@
     [
       "semantic-release-slack-bot",
       {
-        "packageName": "Azure TF module",
         "notifyOnSuccess": true,
         "notifyOnFail": true,
         "markdownReleaseNotes": true,
@@ -146,7 +145,14 @@
               "type": "section",
               "text": {
                 "type": "mrkdwn",
-                "text": ":dancing-tofu: New :azure3: module ($repo_path) version out! *$npm_package_version* :dancing-tofu:"
+                "text": ":dancing-tofu: New :azure3: <$repo_url|module $package_name> *$npm_package_version* version out! :dancing-tofu:"
+              }
+            },
+            {
+              "type": "section",
+              "text": {
+                "type": "mrkdwn",
+                "text": "Module path: $repo_path"
               }
             },
             {
