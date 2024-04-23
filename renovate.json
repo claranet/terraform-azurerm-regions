@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "local>claranet/projects/cloud/azure/renovatebot-config"
+    "local>claranet/projects/cloud/azure/renovatebot-config:automerge"
   ]
 }
