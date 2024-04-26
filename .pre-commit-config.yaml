@@ -1,7 +1,7 @@
 default_install_hook_types: [commit-msg, pre-commit]
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.5.0
+    rev: v4.6.0
     hooks:
       - id: trailing-whitespace
         stages: [pre-commit]
@@ -44,9 +44,9 @@ repos:
       - id: terraform_tfsec
         stages: [pre-commit]
 
-  - repo: https://github.com/compilerla/conventional-pre-commit
-    rev: v3.2.0
+  - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
+    rev: v9.16.0
     hooks:
-      - id: conventional-pre-commit
+      - id: commitlint
         stages: [commit-msg]
-        args: [] # optional: list of Conventional Commits types to allow e.g. [feat, fix, ci, chore, test]
+        additional_dependencies: ["@commitlint/config-conventional"]
