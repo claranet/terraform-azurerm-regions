@@ -1,5 +1,5 @@
 pre-commit      3.7.0
-opentofu        1.6.2
+opentofu        1.7.0
 terraform-docs  0.17.0
 tflint          0.50.3
 trivy           0.50.4
