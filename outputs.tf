@@ -37,3 +37,8 @@ EOD
     location_slug  = local.paired_region
   }
 }
+
+output "data_location" {
+  description = "Azure data location corresponding to the current region."
+  value       = local.data_location
+}
