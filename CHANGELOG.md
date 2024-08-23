@@ -1,3 +1,49 @@
+## 7.2.0 (2024-08-23)
+
+### Features
+
+* **AZ-1443:** add data location map b8a1f43
+
+### Continuous Integration
+
+* **AZ-1391:** enable semantic-release [skip ci] 3acd16e
+* **AZ-1391:** update semantic-release config [skip ci] 1e13f4b
+
+### Miscellaneous Chores
+
+* **deps:** enable automerge on renovate 82bc489
+* **deps:** update dependency opentofu to v1.7.0 2dcc4a4
+* **deps:** update dependency opentofu to v1.7.1 9369c08
+* **deps:** update dependency opentofu to v1.7.2 05685a1
+* **deps:** update dependency opentofu to v1.7.3 353cc97
+* **deps:** update dependency opentofu to v1.8.0 c010708
+* **deps:** update dependency opentofu to v1.8.1 6d77964
+* **deps:** update dependency pre-commit to v3.7.1 a544974
+* **deps:** update dependency pre-commit to v3.8.0 ba3b3c7
+* **deps:** update dependency terraform-docs to v0.18.0 7d0a381
+* **deps:** update dependency tflint to v0.51.0 f350260
+* **deps:** update dependency tflint to v0.51.1 5137e7c
+* **deps:** update dependency tflint to v0.51.2 83e4f4b
+* **deps:** update dependency tflint to v0.52.0 392dc71
+* **deps:** update dependency tflint to v0.53.0 20c0388
+* **deps:** update dependency trivy to v0.50.2 12e2146
+* **deps:** update dependency trivy to v0.50.4 7366b3c
+* **deps:** update dependency trivy to v0.51.0 c82850f
+* **deps:** update dependency trivy to v0.51.1 c37afe2
+* **deps:** update dependency trivy to v0.51.2 0641cdd
+* **deps:** update dependency trivy to v0.51.4 01d925e
+* **deps:** update dependency trivy to v0.52.0 b7ed2b6
+* **deps:** update dependency trivy to v0.52.1 9b2b44a
+* **deps:** update dependency trivy to v0.52.2 7cadf36
+* **deps:** update dependency trivy to v0.53.0 a2a9030
+* **deps:** update dependency trivy to v0.54.1 7c58616
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.92.0 321347e
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.92.1 c48b299
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.92.2 c262edb
+* **deps:** update renovate.json cf45cb7
+* **pre-commit:** update commitlint hook bb62f31
+* **release:** remove legacy `VERSION` file a97f54e
+
 # v7.1.1 - 2024-03-15
 
 Fixed
