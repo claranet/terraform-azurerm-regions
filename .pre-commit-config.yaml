@@ -31,6 +31,7 @@ repos:
         stages: [pre-commit]
         args:
           - --args=--config=.config/terraform-docs.yml
+          - --hook-config=--use-standard-markers=true
         exclude: "^modules|^example|^tools"
       - id: terraform_validate
         stages: [pre-commit]
@@ -44,7 +45,7 @@ repos:
         args:
           - --args=--config=__GIT_WORKING_DIR__/.config/tflint.hcl
           - --env-vars=TFLINT_LOG="info"
-      - id: terraform_tfsec
+      - id: terraform_trivy
         stages: [pre-commit]
 
   - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
