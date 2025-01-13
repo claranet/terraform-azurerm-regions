@@ -45,6 +45,12 @@ rule "terraform_module_pinned_source" {
   enabled = true
 }
 
+# Disabled for examples code with unfixed version
+rule "terraform_module_version" {
+  enabled = false
+  exact = false # default
+}
+
 rule "terraform_naming_convention" {
   enabled = true
 }
