@@ -1,3 +1,38 @@
+## 7.3.0 (2025-01-15)
+
+### Features
+
+* add New Zealand North region 3d58615
+
+### Documentation
+
+* update REGIONS.md 39b873d
+
+### Miscellaneous Chores
+
+* **deps:** update dependency opentofu to v1.8.3 e3d9362
+* **deps:** update dependency opentofu to v1.8.4 c13a7c3
+* **deps:** update dependency opentofu to v1.8.6 2fa9e2d
+* **deps:** update dependency opentofu to v1.8.8 f2e1bf3
+* **deps:** update dependency opentofu to v1.9.0 ba0ec9b
+* **deps:** update dependency pre-commit to v4 e21d81a
+* **deps:** update dependency pre-commit to v4.0.1 d49742c
+* **deps:** update dependency tflint to v0.54.0 fa7c52f
+* **deps:** update dependency tflint to v0.55.0 f5a9f2f
+* **deps:** update dependency trivy to v0.56.1 170036d
+* **deps:** update dependency trivy to v0.56.2 d09ac66
+* **deps:** update dependency trivy to v0.57.1 dbd44e5
+* **deps:** update dependency trivy to v0.58.1 c3ffb3e
+* **deps:** update pre-commit hook alessandrojcm/commitlint-pre-commit-hook to v9.19.0 5fef056
+* **deps:** update pre-commit hook alessandrojcm/commitlint-pre-commit-hook to v9.20.0 4039716
+* **deps:** update pre-commit hook pre-commit/pre-commit-hooks to v5 de6ea73
+* **deps:** update pre-commit hook tofuutils/pre-commit-opentofu to v2.1.0 4d4da8d
+* **deps:** update tools 85ac6a7
+* **deps:** update tools f425286
+* prepare for new examples structure b9f3c67
+* update examples structure 3553459
+* update tflint config for v0.55.0 5c6625c
+
 ## 7.2.1 (2024-10-03)
 
 ### Documentation
