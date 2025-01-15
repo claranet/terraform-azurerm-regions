@@ -39,6 +39,7 @@ locals {
     kor-south        = "Korea South"
     norw-east        = "Norway East"
     norw-west        = "Norway West"
+    nz-north         = "New Zealand North"
     pol-central      = "Poland Central"
     qat-central      = "Qatar Central"
     saf-north        = "South Africa North"
@@ -73,6 +74,7 @@ locals {
     "jap"     = "Japan"
     "kor"     = "Korea"
     "nor"     = "Norway"
+    "nz"      = "New Zealand"
     "sgp"     = "Singapore"
     "swe"     = "Sweden"
     "uk"      = "United Kingdom"
@@ -80,9 +82,9 @@ locals {
   }
 
   /* Short names based on the following rules (where possible) to have better clarity:
-    - contains at least 3 chars, where 2 chars represent global part (continent)
-    - use ISO 3166 code of country concatenation
-  */
+      - contains at least 3 chars, where 2 chars represent global part (continent)
+      - use ISO 3166 code of country concatenation
+    */
   short_names = {
     "asia-east"        = "asea"
     "asia-south-east"  = "asse"
@@ -119,6 +121,8 @@ locals {
     "kor-south"        = "krs"
     "norw-east"        = "noe"
     "norw-west"        = "now"
+    "nz"               = "nz"
+    "nz-north"         = "nzn"
     "pol-central"      = "polc"
     "qat-central"      = "qatc"
     "saf-north"        = "san"
@@ -140,6 +144,7 @@ locals {
     "us-west-3"        = "usw3"
     "us-west-central"  = "uswc"
     "us-west"          = "usw"
+
 
     # Global/continental zones
     "asia"    = "asia" # Asia
@@ -209,6 +214,8 @@ locals {
     "nor"              = "norway"             # Norway
     "norw-east"        = "norwayeast"         # Norway East
     "norw-west"        = "norwaywest"         # Norway West
+    "nz"               = "newzealand"         # New Zealand
+    "nz-north"         = "newzealandnorth"    # New Zealand North
     "pol-central"      = "polandcentral"      # Poland Central
     "qat-central"      = "qatarcentral"       # Qatar Central
     "saf-north"        = "southafricanorth"   # South Africa North
