@@ -48,6 +48,8 @@
 | Norway | norway | nor | nor | N/A | Norway |
 | Norway East | norwayeast | noe | norw-east | norw-west | Norway |
 | Norway West | norwaywest | now | norw-west | norw-east | Norway |
+| New Zealand | newzealand | nz | nz | N/A | N/A |
+| New Zealand North | newzealandnorth | nzn | nz-north | N/A | N/A |
 | Poland Central | polandcentral | polc | pol-central | N/A | Europe |
 | Qatar Central | qatarcentral | qatc | qat-central | N/A | UAE |
 | South Africa North | southafricanorth | san | saf-north | saf-west | Africa |
