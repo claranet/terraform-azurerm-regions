@@ -1,3 +1,13 @@
+## 7.3.1 (2025-01-24)
+
+### Bug Fixes
+
+* typo in data_residency section, it implies data is stored in UAE when it is actually in the UK a5b3e2a
+
+### Miscellaneous Chores
+
+* **deps:** update tools 7f61371
+
 ## 7.3.0 (2025-01-15)
 
 ### Features
