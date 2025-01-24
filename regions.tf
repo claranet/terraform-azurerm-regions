@@ -360,7 +360,7 @@ locals {
     "swz-west"         = "Switzerland"   # Switzerland West
     "uae-central"      = "UAE"           # UAE Central
     "uae-north"        = "UAE"           # UAE North
-    "uk-south"         = "UAE"           # UK South
+    "uk-south"         = "UK"            # UK South
     "uk"               = "UK"            # United Kingdom
     "uk-west"          = "UK"            # UK West
     "us-central"       = "United States" # Central US
