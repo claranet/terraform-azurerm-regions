@@ -36,8 +36,8 @@ body:
   - type: textarea
     id: config
     attributes:
-      label: Potential Terraform Configuration
-      description: Please provide an example of what the new resource or enhancement could look like in a Terraform config.
+      label: Potential OpenTofu Configuration
+      description: Please provide an example of what the new resource or enhancement could look like in a OpenTofu/HCL config.
       render: hcl
   - type: textarea
     id: references

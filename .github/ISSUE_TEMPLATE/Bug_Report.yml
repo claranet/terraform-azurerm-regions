@@ -1,7 +1,7 @@
 name: Bug Report
 description: If something isn't working as expected.
 title: "[BUG] ..."
-labels:  [bug]
+labels: [bug]
 body:
   - type: textarea
     id: community
@@ -21,9 +21,9 @@ body:
   - type: input
     id: terraform
     attributes:
-      label: Terraform Version
-      description: Which Terraform version are you using?
-      placeholder: 1.0.0
+      label: OpenTofu Version
+      description: Which OpenTofu/Terraform version are you using?
+      placeholder: 1.9.0
     validations:
       required: true
   - type: input
@@ -31,7 +31,7 @@ body:
     attributes:
       label: AzureRM Provider Version
       description: Which AzureRM Provider version are you using?
-      placeholder: 3.0.0
+      placeholder: 4.0.0
     validations:
       required: true
   - type: input
@@ -45,11 +45,11 @@ body:
   - type: textarea
     id: config
     attributes:
-      label: Terraform Configuration Files
+      label: OpenTofu Configuration Files
       description: |
-        Please provide a minimal Terraform configuration that can reproduce the issue.
+        Please provide a minimal OpenTofu/HCL code configuration that can reproduce the issue.
 
-        For large Terraform configs, please use a service like Dropbox and share a link to the ZIP file.
+        For large OpenTofu configs, please use a public Github repository.
       render: hcl
     validations:
       required: true
@@ -60,7 +60,7 @@ body:
       description: |
         For long debug logs please provide a link to a GitHub Gist containing the complete debug output. Please do NOT paste the debug output in the issue; just paste a link to the Gist.
 
-        To obtain the debug output, see the [Terraform documentation on debugging](https://www.terraform.io/docs/internals/debugging.html).
+        To obtain the debug output, see the  [OpenTofu documentation on debugging](https://opentofu.org/docs/internals/debugging/) or [Terraform documentation on debugging](https://www.terraform.io/docs/internals/debugging.html).
       render: shell
     validations:
       required: true
@@ -79,9 +79,9 @@ body:
     attributes:
       label: Steps to Reproduce
       description: |
-        Please list the steps required to reproduce the issue, e.g.
+        Please list the steps required to reproduce the issue, e.g:
 
-        1. `terraform apply`
+        1. `tofu apply`
   - type: input
     id: facts
     attributes:
