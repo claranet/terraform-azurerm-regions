@@ -73,6 +73,7 @@ No resources.
 | Name | Description |
 |------|-------------|
 | data\_location | Azure data location corresponding to the current region. |
+| geo\_code | Geo Code used by Azure Backup private endpoints. [Documentation](https://learn.microsoft.com/en-us/azure/backup/scripts/geo-code-list) |
 | location | Azure region in standard format |
 | location\_cli | Azure region in Azure CLI name format |
 | location\_short | Azure region in short format for resource naming purpose |
