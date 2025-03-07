@@ -42,3 +42,8 @@ output "data_location" {
   description = "Azure data location corresponding to the current region."
   value       = local.data_location
 }
+
+output "geo_code" {
+  description = "Geo Code used by Azure Backup private endpoints. [Documentation](https://learn.microsoft.com/en-us/azure/backup/scripts/geo-code-list)"
+  value       = lower(local.geo_code[local.location_slug])
+}
