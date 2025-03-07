@@ -1,3 +1,18 @@
+## 7.4.0 (2025-03-07)
+
+### Features
+
+* **AZ-1534:** add geo code regions 1f9dd4b
+
+### Miscellaneous Chores
+
+* **AZ-1534:** apply suggestions 01b144a
+* **deps:** update dependency trivy to v0.59.1 4214a19
+* **deps:** update dependency trivy to v0.60.0 aca574c
+* **deps:** update pre-commit hook alessandrojcm/commitlint-pre-commit-hook to v9.21.0 3944da0
+* **deps:** update tools c5f8f84
+* update Github templates 09fed8f
+
 ## 7.3.1 (2025-01-24)
 
 ### Bug Fixes
