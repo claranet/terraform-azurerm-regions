@@ -1,3 +1,13 @@
+## 8.0.0 (2025-03-07)
+
+### ⚠ BREAKING CHANGES
+
+* **AZ-1088:** module v8 and structure update
+
+### Features
+
+* **AZ-1088:** module v8 and structure update 9a50eab
+
 ## 7.4.0 (2025-03-07)
 
 ### Features
