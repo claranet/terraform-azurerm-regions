@@ -1,3 +1,9 @@
+## 8.0.1 (2025-03-10)
+
+### Documentation
+
+* update REGIONS.md ([#15](https://git.fr.clara.net/claranet/projects/cloud/azure/terraform/modules/regions/issues/15)) db7b57b
+
 ## 8.0.0 (2025-03-07)
 
 ### ⚠ BREAKING CHANGES
