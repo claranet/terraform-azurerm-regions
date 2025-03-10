@@ -63,7 +63,7 @@
 | UAE Central | uaecentral | uaec | uae-central | uae-north | UAE |
 | UAE North | uaenorth | uaen | uae-north | uae-central | UAE |
 | United Kingdom | uk | uk | uk | N/A | UK |
-| UK South | uksouth | uks | uk-south | uk-west | UAE |
+| UK South | uksouth | uks | uk-south | uk-west | UK |
 | UK West | ukwest | ukw | uk-west | uk-south | UK |
 | United States | unitedstates | us | us | N/A | United States |
 | Central US | centralus | usc | us-central | us-east-2 | United States |
