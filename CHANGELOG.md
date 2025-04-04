@@ -1,3 +1,16 @@
+## 8.0.2 (2025-04-04)
+
+### Bug Fixes
+
+* update `geo_code` to output null if location not supported 9dc9c59
+
+### Miscellaneous Chores
+
+* **deps:** update dependency pre-commit to v4.2.0 6144920
+* **deps:** update pre-commit hook alessandrojcm/commitlint-pre-commit-hook to v9.22.0 a2c1f64
+* **deps:** update pre-commit hook tofuutils/pre-commit-opentofu to v2.2.0 3eb232f
+* **deps:** update tools 44b51fb
+
 ## 8.0.1 (2025-03-10)
 
 ### Documentation
