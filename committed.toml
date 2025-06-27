@@ -1,0 +1,18 @@
+allowed_types = [
+    "build",
+    "chore",
+    "ci",
+    "docs",
+    "feat",
+    "fix",
+    "perf",
+    "refactor",
+    "revert",
+    "style",
+    "test",
+]
+line_length = 100
+merge_commit = true
+style = "conventional"
+subject_capitalized = false
+subject_length = 96
