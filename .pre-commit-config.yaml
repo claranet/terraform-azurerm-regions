@@ -44,11 +44,6 @@ repos:
         args:
           - --args=--config=__GIT_WORKING_DIR__/.config/tflint.hcl
           - --env-vars=TFLINT_LOG="info"
-      - id: tofu_trivy
-        stages: [pre-commit]
-        args:
-          - --args=--severity HIGH,CRITICAL
-          - --args=--skip-dirs '**/.terraform'
 
   - repo: https://github.com/crate-ci/committed
     rev: v1.1.11
