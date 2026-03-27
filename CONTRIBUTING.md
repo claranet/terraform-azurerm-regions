@@ -13,7 +13,7 @@ Please note we have a code of conduct, please follow it in all your interactions
    or changes to [examples](./examples).
 3. Update the [CHANGELOG.md](./CHANGELOG.md) with a new entry block starting with `# Unreleased`
    followed by a description of your new feature, bug fix or change.
-4. The Github Actions CI must pass. It ensures that our Terraform module codestyle rules are followed.
+4. The GitLab/Github CI pipeline must pass. It ensures that our OpenTofu module codestyle rules are followed.
 5. Please wait for maintainers to review your code, they will merge and release your changes once every
    discussions or implementation details are satisfied.
 
@@ -21,7 +21,7 @@ Please note we have a code of conduct, please follow it in all your interactions
 
 We recommend using `pre-commit` ([the famous python git hooks tool](https://pre-commit.com/#intro))
 when you start a contribution. It will automatically trigger hooks which ensure our codestyle rules are followed,
-files are formatted and linted, and that your README.md file is proprerly generated and updated.
+files are formatted and linted, and that your README.md file is properly generated and updated.
 
 Installation on your local system:
 ```bash
@@ -40,11 +40,16 @@ $ pre-commit install
 
 Do your changes as usual, hooks will be triggered by `pre-commit` every time you use the `git commit` command.
 
-To have all `pre-commit` hooks working you will have to setup thoses dependencies locally:
-- latest version of [terraform](https://releases.hashicorp.com/terraform/)
-- [tfdocs](https://github.com/terraform-docs/terraform-docs)
-- [tflint](https://github.com/terraform-linters/tflint)
-- [tfsec](https://github.com/aquasecurity/tfsec)
+To have all `pre-commit` hooks working you will have to set up these dependencies locally.
+We recommend using [mise](https://mise.jdx.dev/) — tool versions are pinned in `.tool-versions`:
+```bash
+$ mise install
+```
+
+This will install the following tools at the correct versions:
+- [opentofu](https://opentofu.org/) — OpenTofu CLI (replaces Terraform)
+- [terraform-docs](https://github.com/terraform-docs/terraform-docs) — documentation generator
+- [tflint](https://github.com/terraform-linters/tflint) — linter for OpenTofu/Terraform
 
 ## Code of Conduct
 

@@ -2,4 +2,4 @@ name: CI
 on: [push, pull_request]
 jobs:
   ci:
-    uses: claranet/terraform-modules-ci/.github/workflows/ci-modules.yaml@main
+    uses: claranet/terraform-modules-ci/.github/workflows/ci-modules.yaml@e732bae1039d0664a6e762d21fd0992db959d228 # v1.1.0
