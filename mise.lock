@@ -2,7 +2,7 @@
 
 [[tools.opentofu]]
 version = "1.11.5"
-backend = "asdf:opentofu"
+backend = "aqua:opentofu/opentofu"
 
 [[tools.pre-commit]]
 version = "4.5.1"
