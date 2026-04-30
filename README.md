@@ -68,13 +68,13 @@ No resources.
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | azure\_region | Azure Region standard name, CLI name or slug format | `string` | n/a | yes |
 
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | data\_location | Azure data location corresponding to the current region. |
 | geo\_code | Geo Code used by Azure Backup private endpoints. [Documentation](https://learn.microsoft.com/en-us/azure/backup/scripts/geo-code-list) |
 | location | Azure region in standard format |
