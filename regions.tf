@@ -81,10 +81,9 @@ locals {
     "us"      = "United States"
   }
 
-  /* Short names based on the following rules (where possible) to have better clarity:
-      - contains at least 3 chars, where 2 chars represent global part (continent)
-      - use ISO 3166 code of country concatenation
-    */
+  # Short names based on the following rules (where possible) to have better clarity:
+  #     - contains at least 3 chars, where 2 chars represent global part (continent)
+  #     - use ISO 3166 code of country concatenation
   short_names = {
     "asia-east"        = "asea"
     "asia-south-east"  = "asse"
