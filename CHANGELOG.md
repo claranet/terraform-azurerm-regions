@@ -1,3 +1,23 @@
+## 8.0.5 (2026-06-05)
+
+### Documentation
+
+* replace block comment with line comments in locals d5f0bea
+
+### Miscellaneous Chores
+
+* **deps:** 🔗 update mise conf for OpenTofu 5b35c8c
+* **deps:** update dependency opentofu to v1.11.7 461f512
+* **deps:** update dependency opentofu to v1.12.0 06b0343
+* **deps:** update dependency opentofu to v1.12.1 482e1da
+* **deps:** update dependency terraform-docs to v0.23.0 ff48e9c
+* **deps:** update dependency terraform-docs to v0.24.0 75b626b
+* **deps:** update dependency tflint to v0.62.1 35b5e92
+* **deps:** update pre-commit hook tofuutils/pre-commit-opentofu to v2.3.0 27831a9
+* **deps:** update pre-commit hook tofuutils/pre-commit-opentofu to v2.4.0 e4244f1
+* **pre-commit:** 🔧 move to prek 492e7b4
+* **tfdocs:** bump tfdocs to v0.22 🔧 4c3d12f
+
 ## 8.0.4 (2026-03-27)
 
 ### Bug Fixes
