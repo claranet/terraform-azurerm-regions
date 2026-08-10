@@ -3,10 +3,10 @@
 
 This Terraform module is designed to help in using the AzureRM terraform provider.
 
-It provides for an Azure region given in standard format, Azure CLI format or slug format (used by 
-[Claranet tfwrapper](https://github.com/claranet/tfwrapper)) the Azure standard format, a trigram used 
-for resource naming, the Azure CLI format, the 
-[geo code format](https://learn.microsoft.com/en-us/azure/backup/scripts/geo-code-list) 
+It provides for an Azure region given in standard format, Azure CLI format or slug format (used by
+[Claranet tfwrapper](https://github.com/claranet/tfwrapper)) the Azure standard format, a trigram used
+for resource naming, the Azure CLI format, the
+[geo code format](https://learn.microsoft.com/en-us/azure/backup/scripts/geo-code-list)
 (used by Azure Backup) and a slug format.
 
 It also provides the [paired region](https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure) associated to the current one.
@@ -19,6 +19,7 @@ Complete regions mapping is also available in [REGIONS.md](REGIONS.md) documenta
 
 | Module version | Terraform version | OpenTofu version | AzureRM version |
 | -------------- | ----------------- | ---------------- | --------------- |
+| >= 9.x.x       | **Unverified**    | 1.12.x           | >= 5.0          |
 | >= 8.x.x       | **Unverified**    | 1.8.x            | >= 4.0          |
 | >= 7.x.x       | 1.3.x             |                  | >= 3.0          |
 | >= 6.x.x       | 1.x               |                  | >= 3.0          |
