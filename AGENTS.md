@@ -107,7 +107,7 @@ resource "my_other_resource" {
 ### 7. Version Management
 
 - Enforce Terraform version constraints >= 1.3 in [`versions.tf`](versions.tf)
-- Require OpenTofu >= 1.8 in CI/CD configurations
+- Require OpenTofu >= 1.12 in CI/CD configurations
 - Update both `.gitlab-ci.yml` and `providers.tf` to reflect AzureRM provider version constraints
 
 ### 8. Miscellaneous Updates
@@ -168,6 +168,104 @@ output "resource_application_insights" {
   value = azurerm_application_insights.main
 }
 ```
+
+## Module Upgrade to v9
+
+This file is designed to be read by OpenCode directly. From the OpenCode prompt, tell the agent:
+
+> Using @../../ci/{{cookiecutter.module_name}}/AGENTS.md guidelines, upgrade this module to v9
+
+When upgrading a module to v9, apply the following changes in addition to the guidelines above:
+
+### 0. Development Branch
+
+- Create/use `v9/SREAA-368` as the git development branch for all v9 upgrade work, per the [Git Contribution Guidelines](#git-contribution-guidelines).
+
+### 1. OpenTofu Version
+
+- Set the OpenTofu version constraint to `>= 1.12` in [`versions.tofu`](versions.tofu):
+  ```terraform
+  terraform {
+    required_version = ">= 1.12"
+  }
+  ```
+- Update the `opentofu` entry to `1.12.5` (or the latest patch satisfying `>= 1.12`) in both mise lockfiles: [`.tool-versions`](.tool-versions) and `mise.lock` (if present in the module).
+
+### 2. AzureRM Provider Version
+
+- Set the AzureRM provider version constraint to `~> 5.0` in [`providers.tf`](providers.tf):
+  ```terraform
+  terraform {
+    required_providers {
+      azurerm = {
+        source  = "hashicorp/azurerm"
+        version = "~> 5.0"
+      }
+    }
+  }
+  ```
+
+### 3. Examples Directory
+
+- Update every `examples/*/versions.tf` (and any other version-pinning file under `examples/`) to match the same `required_version` (OpenTofu `>= 1.12`) and AzureRM provider (`~> 5.0`) constraints applied to the module root in steps 1 and 2.
+- Check all examples for breaking changes too, not just the root module.
+
+### 4. GitLab CI Template
+
+- During v9 development, point the `.gitlab-ci.yml` include `ref` to the `v9/SREAA-368` branch instead of `master`:
+  ```yaml
+  include:
+    - project: "claranet/projects/cloud/azure/terraform/ci"
+      ref: v9/SREAA-368
+      file: "/pipeline.yml"
+  ```
+- Revert the `ref` back to `master` (or the relevant release tag) once `v9/SREAA-368` is merged and released.
+- Also update the `.gitlab-ci.yml` `variables` block so `TF_MIN_VERSION` and `AZURERM_PROVIDER_MIN_VERSION` match the new constraints from steps 1 and 2:
+  ```yaml
+  variables:
+    TF_MIN_VERSION: "1.12"
+    AZURERM_PROVIDER_MIN_VERSION: "5.0"
+  ```
+
+### 5. `.config` Directory Sync
+
+- Sync [`.config/terraform-docs.yml`](.config/terraform-docs.yml) and [`.config/tflint.hcl`](.config/tflint.hcl) with the versions found in the `../../ci` repository root `.config/` directory, so the module stays aligned with the latest linting and documentation rules.
+
+### 6. AzureRM 5.0 Code Migration
+
+- Before touching resource/data-source code, read the official upgrade guide: [AzureRM Provider 5.0 Upgrade Guide](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/5.0-upgrade-guide).
+- Identify and apply every breaking change relevant to the resources used in the module (renamed/removed arguments, changed defaults, removed resources/data sources, behavior changes, etc.) as documented in the guide.
+- Re-run `tflint` and `tofu validate`/`plan` after migration to confirm the module is compatible with AzureRM `~> 5.0`.
+
+### 7. Regenerate README.md
+
+- After the `.config` sync (step 5), regenerate `README.md` with `terraform-docs` using the updated [`.config/terraform-docs.yml`](.config/terraform-docs.yml) template, via the `tofu_docs` hook (`prek`/`pre-commit`):
+  ```bash
+  prek run tofu_docs --all-files
+  # or: pre-commit run tofu_docs --all-files
+  ```
+- Review the diff to ensure inputs/outputs/versions reflect the v9 changes (new variables, outputs, version constraints).
+
+### 8. Commit and Open MR
+
+- Commit all v9 upgrade changes using [Conventional Commits](https://www.conventionalcommits.org/) with the following structure:
+  ```
+  feat(SREAA-368): upgrade module to v9 (OpenTofu >= 1.12, AzureRM ~> 5.0)
+
+  {description body}
+
+  BREAKING CHANGES: {breaking description}
+  ```
+  - `{description body}`: summarize the changes applied (version bumps, examples updated, AzureRM 5.0 migration, README regeneration, etc.).
+  - `BREAKING CHANGES: {breaking description}`: list every breaking change from the AzureRM 5.0 migration (step 6) and the raised minimum versions, so consumers know what to expect when upgrading.
+- Open a merge request from `v9/SREAA-368` against `master` or `main` (default branch) using the [`glab`](https://gitlab.com/gitlab-org/cli) CLI:
+  ```bash
+  glab mr create \
+    --title "feat(SREAA-368): upgrade module to v9 (OpenTofu >= 1.12, AzureRM ~> 5.0)" \
+    --description "{description body}" \
+    --target-branch v9/SREAA-368
+  ```
+- Ensure all pre-commit checks and CI pipelines pass before requesting review.
 
 ## Git Contribution Guidelines
 
