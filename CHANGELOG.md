@@ -1,3 +1,18 @@
+## 9.0.0 (2026-08-14)
+
+### ⚠ BREAKING CHANGES
+
+* **SREAA-368:** modules >= 9.x.x require OpenTofu >= 1.12 and AzureRM provider >= 5.0
+
+### Features
+
+* **SREAA-368:** bump to v9, require OpenTofu >= 1.12 574c6f1
+
+### Miscellaneous Chores
+
+* **deps:** update dependency opentofu to v1.12.5 fc84583
+* **deps:** update dependency tflint to v0.64.0 fc344bc
+
 ## 8.0.6 (2026-07-20)
 
 ### Bug Fixes
