@@ -1,4 +1,4 @@
-prek            0.3.9
-opentofu        1.12.5
+prek            0.4.14
+opentofu        1.12.6
 terraform-docs  0.24.0
 tflint          0.64.0
