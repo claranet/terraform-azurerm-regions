@@ -131,40 +131,6 @@
           "CHANGELOG.md"
         ]
       }
-    ],
-    [
-      "semantic-release-slack-bot",
-      {
-        "notifyOnSuccess": true,
-        "notifyOnFail": true,
-        "markdownReleaseNotes": true,
-        "onSuccessTemplate": {
-          "text": "New Azure TF module release",
-          "blocks": [
-            {
-              "type": "section",
-              "text": {
-                "type": "mrkdwn",
-                "text": ":dancing-tofu: New :azure3: <$repo_url|module $package_name> *$npm_package_version* version out! :dancing-tofu:"
-              }
-            },
-            {
-              "type": "section",
-              "text": {
-                "type": "mrkdwn",
-                "text": "Module path: $repo_path"
-              }
-            },
-            {
-              "type": "section",
-              "text": {
-                "type": "mrkdwn",
-                "text": "$release_notes"
-              }
-            }
-          ]
-        }
-      }
     ]
   ]
 }
